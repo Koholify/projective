@@ -34,7 +34,7 @@ local function setup(P)
 	vim.keymap.set('n', '<leader>pc', ':ProjectiveCompile<cr>', {desc = "Compile With Projective"})
 	vim.keymap.set('n', '<leader>px', ':ProjectiveRun', {desc = "Run Proj From Projective Root"})
 	vim.keymap.set('n', '<leader>pt', ':ProjectiveSetTarget ', {desc = "Set Target For Projective Run"})
-	vim.keymap.set('n', '<leader>pz', ':ProjectiveRunAsync ', {desc = "Run target async with stdout in a temp buffer"})
+	vim.keymap.set('n', '<leader>pz', ':ProjectiveRunAsync ', {desc = "Run target async with stdout/stderr to a buffer"})
 end
 
 return {

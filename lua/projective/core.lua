@@ -15,6 +15,8 @@ Projective.setup = function(opts)
 
 	if not opts.ignore_keymap then
 		require("projective.keymap").setup(Projective)
+	else
+		require("projective.keymap").create_commands(Projective)
 	end
 end
 
