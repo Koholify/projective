@@ -10,7 +10,7 @@ Projective.async_running = nil
 Projective.setup = function(opts)
 	opts = opts or {}
 	Projective.root_dir_identifiers = opts.root_markers or defaults.root_dir_identifiers
-	Projective.command_command = opts.cmd or defaults.command
+	Projective.compile_command = opts.cmd or defaults.command
 	Projective.run_target = opts.target or defaults.run_target
 
 	if not opts.ignore_keymap then
